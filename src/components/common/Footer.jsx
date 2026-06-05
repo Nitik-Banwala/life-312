@@ -1,8 +1,13 @@
 
-import { FOOTER_LIST, SOCIAL_LINKS,PAGE_URLS } from "../../../utils/helper";
+import { FOOTER_LIST, SOCIAL_LINKS,PAGE_URLS } 
+from "../../../utils/helper";
 import Icons from "./Icons";
+import { useState } from "react";
 
 const Footer = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+  const languages = ["Türkçe", "English", "Deutsch"];
     const currentYear = new Date().getFullYear();
  
     return (
@@ -18,11 +23,39 @@ const Footer = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className="flex flex-row items-center gap-2">
-                        <Icons icon={'yelloearth'}/>
-                       <p className="text-white manrope text-base font-semibold leading-150"> Türkçe</p>
-                         <Icons icon={'down'}/>
-                    </div>
+                     <div className="relative">
+      <div className="flex flex-row items-center gap-2">
+        <Icons icon="yelloearth" />
+
+        <p className="text-white manrope text-base font-semibold leading-150">
+          Türkçe
+        </p>
+
+        <button onClick={() => setIsOpen(!isOpen)}>
+          <div
+            className={`transition-transform duration-300 ${
+              isOpen ? "rotate-180" : "rotate-0"
+            }`}
+          >
+            <Icons icon="down" />
+          </div>
+        </button>
+      </div>
+
+      {isOpen && (
+        <div className="absolute top-full mt-2 right-0 min-w-[120px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
+          {languages.map((lang, index) => (
+            <button
+              key={index}
+              className="w-full px-4 py-2 text-left text-black hover:bg-gray-100 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {lang}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
                 </div>
 
                 <div className="flex items-start gap-y-10 gap-5 flex-wrap justify-between mt-10 sm:mt-20">

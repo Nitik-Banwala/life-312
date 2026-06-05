@@ -15,7 +15,7 @@ const Seffaf = () => {
                 h-[429.1px]
                 flex flex-col items-center justify-center
                 bg-no-repeat bg-cover bg-center
-                ${(index === 1 || index === 3) ? "min-[772.1px]:mt-[58.1px]" : ""}
+                ${(index === 1 || index === 3) ? "min-[1206.1px]:mt-[58.1px]" : ""}
               `}>
                             <div >
                                 <Icons icon={item.icon} />
