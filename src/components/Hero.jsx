@@ -4,7 +4,7 @@ import Navbar from "./common/Navbar";
 
 const Hero = () => {
   return (
-    <div className=" px-4 bg-[url('/assets/images/png/hero.png')] bg-no-repeat bg-center bg-cover w-full h-200 sm:h-[1000.1px] lg:min-h-[1000.1px] overflow-hidden">
+    <div className=" px-4 bg-[url('/assets/images/webp/hero.webp')] bg-no-repeat bg-center bg-cover w-full h-200 sm:h-[1000.1px] lg:min-h-[1000.1px] overflow-hidden">
       <Navbar />
 
       <div className="max-w-[1612.1px] text-white w-full mx-auto px-4 lg:px-0">

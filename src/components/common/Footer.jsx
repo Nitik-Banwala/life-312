@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <img src="/assets/images/png/footer.png" alt="logo" className="w-48.5 z-[-1] pointer-events-none animate-pulse absolute bottom-15.25 hidden min-[1500.1px]:flex left-15.25 h-57.75" />
+            <img src="/assets/images/webp/footer.webp" alt="logo" className="w-48.5 z-[-1] pointer-events-none animate-pulse absolute bottom-15.25 hidden min-[1500.1px]:flex left-15.25 h-57.75" />
         </footer>
     )
 }

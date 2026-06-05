@@ -31,8 +31,8 @@ const Cozum = () => {
       </div>
       <div className='bg-primary-200/5'>
         <div className="bg-white rounded-b-3xl pt-14 md:pt-18 lg:pt-22 2xl:pt-27 relative z-1">
-          <img className='absolute top-[43%]  left-18.5 z-[-1] 2xl:block hidden' width="112" height="130" src="/assets/images/png/market.png" alt="crow-place" />
-          <img className='absolute 2xl:right-26 right-0 z-[-1]' width="194" height="231" src="/assets/images/png/elips.png" alt="polygonRightEllipse" />
+          <img className='absolute top-[43%]  left-18.5 z-[-1] 2xl:block hidden' width="112" height="130" src="/assets/images/webp/market.webp" alt="crow-place" />
+          <img className='absolute 2xl:right-26 right-0 z-[-1]' width="194" height="231" src="/assets/images/webp/elips.webp" alt="polygonRightEllipse" />
           <div className="2xl:max-w-463.25 max-w-285 2xl:px-57.5 xl:px-10 px-5 mx-auto">
             <div className="flex lg:flex-row flex-col 2xl:justify-between justify-center lg:gap-5 gap-10">
               {/* Left Content */}
@@ -73,7 +73,7 @@ const Cozum = () => {
                 <img
                   width={711}
                   height={1030}
-                  src="/assets/images/png/building.png"
+                  src="/assets/images/webp/building.webp"
                   alt="Modern Buildings"
                   className="w-full xl:h-257.5 max-lg:h-125  object-contain object-bottom max-lg:mx-auto"
                 />

@@ -10,7 +10,7 @@ const Seffaf = () => {
                     return (
                         <div key={index}
                             className={`
-                bg-[url('/assets/images/png/yellow.png')]
+                bg-[url('/assets/images/webp/yellow.webp')]
                 w-full max-w-[370.1px]
                 h-[429.1px]
                 flex flex-col items-center justify-center

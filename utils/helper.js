@@ -1,12 +1,12 @@
 export const NAV_LINKS = ['Ana Sayfa', 'Hakkımızda', 'Hizmetler', 'Projeler', 'iletişim']
-export const IMAGES = ['/assets/images/png/one.png', '/assets/images/png/two.png', '/assets/images/png/three.png', '/assets/images/png/four.png', '/assets/images/png/five.png', '/assets/images/png/six.png', '/assets/images/png/seven.png',]
-export const SLIDER_IMAGES = ['/assets/images/png/sliderone.png',
-     '/assets/images/png/slidertwo.png',
-      '/assets/images/png/sliderthree.png',
-      '/assets/images/png/sliderfour.png',
-       '/assets/images/png/sliderfive.png',
-       '/assets/images/png/slidersix.png',
-        '/assets/images/png/sliderseven.png',]
+export const IMAGES = ['/assets/images/webp/one.webp', '/assets/images/webp/two.webp', '/assets/images/webp/three.webp', '/assets/images/webp/four.webp', '/assets/images/webp/five.webp', '/assets/images/webp/six.webp', '/assets/images/webp/seven.webp',]
+export const SLIDER_IMAGES = ['/assets/images/webp/sliderone.webp',
+     '/assets/images/webp/slidertwo.webp',
+      '/assets/images/webp/sliderthree.webp',
+      '/assets/images/webp/sliderfour.webp',
+       '/assets/images/webp/sliderfive.webp',
+       '/assets/images/webp/slidersix.webp',
+        '/assets/images/webp/sliderseven.webp',]
 export const HAKIMZADA = [
     {
         heading: 'Hakkımızda',
@@ -260,135 +260,135 @@ export const SOCIAL_LINKS = [
 ];
  export const ALL_PATTERNS = {
   TF: [
-    { image: "/assets/images/png/tabone.png",
+    { image: "/assets/images/webp/tabone.webp",
     },
-    { image: "/assets/images/png/tabtwo.png",
-    },
-    {
-       image: "/assets/images/png/tabthree.png",
+    { image: "/assets/images/webp/tabtwo.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
-    },
-    { image: "/assets/images/png/tabsix.png",
-    },
-    { image: "/assets/images/png/tabseven.png",
+       image: "/assets/images/webp/tabthree.webp",
     },
     {
-       image: "/assets/images/png/tabeight.png",
+      image: "/assets/images/webp/tabfour.webp",
+    },
+    { image: "/assets/images/webp/tabsix.webp",
+    },
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
     },
     {
-      image: "/assets/images/png/tabfive.png",
-    },{ image: "/assets/images/png/tabsix.png",
-    },
-    { image: "/assets/images/png/tabseven.png",
+      image: "/assets/images/webp/tabfour.webp",
     },
     {
-       image: "/assets/images/png/tabeight.png",
+      image: "/assets/images/webp/tabfive.webp",
+    },{ image: "/assets/images/webp/tabsix.webp",
+    },
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
+    },
+    {
+      image: "/assets/images/webp/tabfour.webp",
     },
    {
-       image: "/assets/images/png/tabeight.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     
    
   ],
   WF: [
-    { image: "/assets/images/png/tabsix.png",
+    { image: "/assets/images/webp/tabsix.webp",
     },
-    { image: "/assets/images/png/tabseven.png",
-    },
-    {
-       image: "/assets/images/png/tabeight.png",
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
     },
     {
-      image: "/assets/images/png/tabfive.png",
+      image: "/assets/images/webp/tabfour.webp",
+    },
+    {
+      image: "/assets/images/webp/tabfive.webp",
     },
   ],
   CN: [
-     { image: "/assets/images/png/tabtwo.png",
+     { image: "/assets/images/webp/tabtwo.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabthree.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+      image: "/assets/images/webp/tabfour.webp",
     },
     {
-      image: "/assets/images/png/tabfive.png",
+      image: "/assets/images/webp/tabfive.webp",
     },
-    { image: "/assets/images/png/tabsix.png",
+    { image: "/assets/images/webp/tabsix.webp",
     },
-    { image: "/assets/images/png/tabseven.png",
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabeight.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
   ],
   AN: [
-    { image: "/assets/images/png/tabone.png",
+    { image: "/assets/images/webp/tabone.webp",
     },
-    { image: "/assets/images/png/tabtwo.png",
-    },
-    {
-       image: "/assets/images/png/tabthree.png",
+    { image: "/assets/images/webp/tabtwo.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
     },
     {
-      image: "/assets/images/png/tabfive.png",
-    },
-    { image: "/assets/images/png/tabsix.png",
-    },
-    { image: "/assets/images/png/tabseven.png",
+      image: "/assets/images/webp/tabfour.webp",
     },
     {
-       image: "/assets/images/png/tabeight.png",
+      image: "/assets/images/webp/tabfive.webp",
+    },
+    { image: "/assets/images/webp/tabsix.webp",
+    },
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
+    },
+    {
+      image: "/assets/images/webp/tabfour.webp",
     },
   ],
   AP: [
     {
-      image: "/assets/images/png/tabfour.png",
+      image: "/assets/images/webp/tabfour.webp",
     },
     {
-      image: "/assets/images/png/tabfive.png",
+      image: "/assets/images/webp/tabfive.webp",
     },
-    { image: "/assets/images/png/tabsix.png",
+    { image: "/assets/images/webp/tabsix.webp",
     },
-    { image: "/assets/images/png/tabseven.png",
-    },
-    {
-       image: "/assets/images/png/tabeight.png",
+    { image: "/assets/images/webp/tabseven.webp",
     },
     {
-       image: "/assets/images/png/tabthree.png",
+       image: "/assets/images/webp/tabeight.webp",
     },
     {
-      image: "/assets/images/png/tabfour.png",
+       image: "/assets/images/webp/tabthree.webp",
+    },
+    {
+      image: "/assets/images/webp/tabfour.webp",
     },
   ],
 };
