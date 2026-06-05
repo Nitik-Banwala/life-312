@@ -8,11 +8,11 @@ const INITIAL_VISIBLE = 8;
 
 const PatternCard = ({ pattern }) => (
   <div className="rounded-lg overflow-hidden flex">
-    <div className="flex justify-center ">
+    <div className="flex z-20 justify-center ">
       <img
         src={pattern.image}
         alt={pattern.title}
-        className="w-full max-w-[305.1px] h-[419.1px]"
+        className="w-full max-w-[305.1px] bg-white h-[419.1px]"
       />
     </div>
   </div>
@@ -96,7 +96,7 @@ const Patterns = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen md:mt-37.5 mt-20 px-4">
+    <div className="bg-white md:mt-37.5 mt-20 px-4">
       <div className=" absolute right-0 -mt-40 mr-10 hidden lg:flex">
         <img src="/assets/images/svg/icon.svg" alt="" />
       </div>
@@ -119,7 +119,7 @@ const Patterns = () => {
         ))}
       </div>
 
-      <div className="flex justify-center gap-3 mb-15">
+      <div className="flex justify-center gap-3 mb-15 ">
 
         <Button
           onClick={handleDownload}
@@ -132,8 +132,10 @@ const Patterns = () => {
           Buy the Set on Amazon
         </Button>
       </div>
-
-      <div className="max-w-[1281.1px] mx-auto flex items-center justify-center flex-wrap gap-5">
+      <div className=" absolute z-0 mt-60 translate-x-[70%] ">
+        <img src="/assets/images/svg/contact-ellipse.svg" alt="" />
+      </div>
+      <div className="max-w-[1281.1px] z-20 mx-auto flex items-center justify-center flex-wrap gap-5">
         {visible.map((pattern) => (
           <PatternCard key={pattern.id} pattern={pattern} />
         ))}

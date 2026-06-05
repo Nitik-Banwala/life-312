@@ -6,7 +6,7 @@ const Projext = () => {
   return (
     <div className="px-4">
       <div className="mt-16 lg:mt-[127.1px]">
-        <h2 className="text-dark text-center font-test-tiempos leading-115 text-4xl md:text-5xl lg:text-64">
+        <h2 className="text-dark text-center font-test-tiempos leading-115 text-4xl sm:text-5xl md:text-64">
           PROJELERİMİZ
         </h2>
 
@@ -28,11 +28,11 @@ const Projext = () => {
           </div>
         </div>
 
-        <div className="max-w-[1305.1px] w-full mx-auto mt-12 lg:mt-20 mb-12 lg:mb-16 px-4 lg:px-0">
+        <div className="max-w-[1305.1px] w-full mx-auto mt-12 md:20 lg:mt-30 mb-12 lg:mb-16 px-4 lg:px-0">
           <div className="bg-[url('/assets/images/webp/bulbg.webp')] bg-no-repeat bg-center bg-cover min-h-[345.1px] py-8 lg:py-9 px-6 lg:px-12.5 flex flex-col lg:flex-row justify-between gap-10">
 
             <div>
-              <h2 className="max-w-[640.1px] mt-4 lg:mt-10 text-3xl md:text-5xl lg:text-56 leading-120 lg:ml-8 text-white tracking-[-0.02em]">
+              <h2 className="max-w-[640.1px] mt-4 lg:mt-10 text-3xl sm:text-5xl md:text-56 leading-120 lg:ml-8 text-white tracking-[-0.02em]">
                 Hayatı kolaylaştıran çözümler üretiyoruz.
               </h2>
 

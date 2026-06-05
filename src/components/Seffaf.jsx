@@ -2,9 +2,9 @@ import { SEFFAF } from "../../utils/helper"
 import Icons from "./common/Icons"
 const Seffaf = () => {
     return (
-        <div className="max-w-[1587.1px] w-full px-4 mx-auto text-center mt-30">
+        <div className="max-w-[1609.1px] w-full px-4 mx-auto text-center mt-30">
             <p className="text-thik text-2xl font-semibold leading-[91%] manrope">Neden bizi tercih etmelisiniz?</p>
-            <h2 className="text-dark text-64 font-test-tiempos leading-115 mt-8">Şeffaf ve Güvenilir Yönetim Anlayışı</h2>
+            <h2 className="text-dark text-4xl sm:text-5xl md:text-64 font-test-tiempos leading-115 mt-8">Şeffaf ve Güvenilir Yönetim Anlayışı</h2>
             <div className=" flex flex-row flex-wrap mt-16 gap-8 justify-center">
                 {SEFFAF.map((item, index) => {
                     return (

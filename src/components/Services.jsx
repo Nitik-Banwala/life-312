@@ -16,7 +16,7 @@ const Services = () => {
       </div>
 
       <div className="text-center mb-8 mt-12 lg:mt-24 px-4">
-        <h1 className="text-2xl sm:text-[32.1px] font-bold leading-140 text-ultra mb-1.5">
+        <h1 className="text-2xl sm:text-32 md:text-40 font-bold leading-140 text-ultra mb-1.5">
           Profesyonel Hizmet Çözümlerimiz
         </h1>
 

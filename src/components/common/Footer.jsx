@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
  
     return (
-        <footer className='px-5 relative z-1 overflow-x-clip bg-dark'>
+        <footer className='px-5 manrope relative z-1 overflow-x-clip bg-dark'>
             <div className="2xl:max-w-331.25 xl:max-w-285 max-w-285 mx-auto pt-7 2xl:pt-8.75 pb-5 2xl:pb-6.5">
                 <div className="flex max-sm:flex-col gap-5 justify-between sm:items-center">
                     <ul className="flex items-center gap-3.75">
