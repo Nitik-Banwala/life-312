@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  /* text-size */
+  --text-200: 200px;
+  --text-80: 80px;
+  --text-32: 32px;
+  --text-64: 64px;
+  --text-40: 40px;
+  --text-56: 56px;
+
+  --color-dark:#0D214F;
+  --color-dark-yellow:#DDAC4A;
+  --color-light:#AF7EF4;
+  --color-ultra:#0AB4D4;
+  --color-thik:#305CDE;
+  --color-gray:#9DA2B3;
+  --color-dark-blue:#8E2EE0;
+
+
+  --leading-150:150%;
+  --leading-140:140%;
+  --leading-120:120%;
+  --leading-125:125%;
+  --leading-166:166%;
+  --leading-138:138%;
+  --leading-100:100%;
+  --leading-115:115%;
+  --leading-116:116%;
+
+}
+
+@font-face {
+  font-family: 'TestTiemposHeadline';
+  src: url(../public/assets/font/test-tiempos-font/TestTiemposHeadline-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope{
+    font-family: "Manrope", sans-serif;
+}
+.font-test-tiempos {
+  font-family: 'TestTiemposHeadline', sans-serif;
+  font-display: swap;
+}
+@theme {
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
