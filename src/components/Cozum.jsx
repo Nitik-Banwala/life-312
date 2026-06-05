@@ -10,7 +10,7 @@ const Cozum = () => {
   return (
     <div >
       <div className="bg-white px-4 pt-25.5 rounded-t-3xl -mt-5 z-20 relative">
-        <h2 className=" text-4xl sm:text-5xl md:text-64 text-center font-test-tiempos">Çözüm Ortaklarımız</h2>
+        <h2 className=" text-4xl sm:text-5xl md:text-64 text-dark text-center font-test-tiempos">Çözüm Ortaklarımız</h2>
       </div>
       <div className="overflow-hidden w-full mt-14">
         <div className="flex w-max animate-marquee">
@@ -35,9 +35,8 @@ const Cozum = () => {
           <img className='absolute 2xl:right-26 right-0 z-[-1]' width="194" height="231" src="/assets/images/webp/elips.webp" alt="polygonRightEllipse" />
           <div className="2xl:max-w-463.25 max-w-285 2xl:px-57.5 xl:px-10 px-5 mx-auto">
             <div className="flex lg:flex-row flex-col 2xl:justify-between justify-center lg:gap-5 gap-10">
-              {/* Left Content */}
               <div className='2xl:max-w-143.5 lg:max-w-117.5 lg:pt-12.25'>
-                <h2 data-aos="zoom-in" className="mb-5 text-4xl sm:text-5xl md:text-64 font-test-tiempos leading-115 max-lg:text-center">Hakkımızda</h2>
+                <h2 data-aos="zoom-in" className="mb-5 text-4xl sm:text-5xl md:text-64 font-test-tiempos text-dark leading-115 max-lg:text-center">Hakkımızda</h2>
                 <h3 data-aos="zoom-in" className="text-accent tracking-[-1.2px] text-xl leading-140 sm:text-3xl md:text-40 manrope text-dark-yellow font-bold mb-4 md:mb-6  max-lg:text-center">
                   Profesyonel Yaklaşımlar ve Profesyonel Hizmet Anlayışı
                 </h3>
