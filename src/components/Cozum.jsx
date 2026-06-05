@@ -21,7 +21,7 @@ const Cozum = () => {
             >
               <img
                 src={item}
-                alt=""
+                alt="image"
                 className="h-15.5"
               />
               <span className="bg-black/15 w-0.5 h-7 mx-12" />

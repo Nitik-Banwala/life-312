@@ -19,7 +19,7 @@ const Projext = () => {
               >
                 <img
                   src={item}
-                  alt=""
+                  alt="image"
                   className="h-10 md:h-12 lg:h-15.5"
                 />
                 <div className="bg-black/15 w-0.5 h-5 lg:h-7 mx-22 lg:mx-30" />
@@ -43,7 +43,7 @@ const Projext = () => {
 
             <div className="flex flex-col items-start lg:items-end">
               <div className="w-[87.1px] h-[96.1px]">
-               <img src="/assets/images/svg/footer.svg" alt="" />
+               <img src="/assets/images/svg/footer.svg" alt="image" />
               </div>
 
               <Button variant="danger" className="mt-8  lg:mt-17.5">

@@ -9,7 +9,7 @@ const Services = () => {
       <div
        className="max-w-[1600.1px] hidden min-[1480px]:flex mx-auto mb-[-223.1px]"
       >
-        <img src="/assets/images/svg/contact-ellipse.svg" alt=""  />
+        <img src="/assets/images/svg/contact-ellipse.svg" alt="image"  />
       </div>
       <div className="max-w-[1920.1px] w-full flex justify-end overflow-hidden">
         <Icons icon={"text"} />

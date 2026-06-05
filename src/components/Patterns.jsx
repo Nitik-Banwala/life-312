@@ -98,7 +98,7 @@ const Patterns = () => {
   return (
     <div className="bg-white md:mt-37.5 mt-20 px-4">
       <div className=" absolute right-0 -mt-40 mr-10 hidden lg:flex">
-        <img src="/assets/images/svg/icon.svg" alt="" />
+        <img src="/assets/images/svg/icon.svg" alt="image" />
       </div>
       <div className="flex justify-center h-12.5 gap-0  mb-8.5 overflow-x-auto">
 
@@ -133,7 +133,7 @@ const Patterns = () => {
         </Button>
       </div>
       <div className=" absolute z-0 mt-60 translate-x-[70%] ">
-        <img src="/assets/images/svg/contact-ellipse.svg" alt="" />
+        <img src="/assets/images/svg/contact-ellipse.svg" alt="image" />
       </div>
       <div className="max-w-[1281.1px] z-20 mx-auto flex items-center justify-center flex-wrap gap-5">
         {visible.map((pattern) => (
