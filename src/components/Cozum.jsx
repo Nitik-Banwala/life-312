@@ -3,8 +3,6 @@ import { STATS_LIST } from "../../utils/helper"
 import Icons from "./common/Icons"
 import { PAGE_URLS } from "../../utils/helper"
 
-
-
 const Cozum = () => {
 
   return (
@@ -17,13 +15,11 @@ const Cozum = () => {
           {[...IMAGES, ...IMAGES].map((item, index) => (
             <div
               key={index}
-              className=" h-15.5 flex items-center shrink-0"
-            >
+              className=" h-15.5 flex items-center shrink-0">
               <img
                 src={item}
                 alt="image"
-                className="h-15.5"
-              />
+                className="h-15.5"/>
               <span className="bg-black/15 w-0.5 h-7 mx-12" />
             </div>
           ))}
@@ -50,7 +46,6 @@ const Cozum = () => {
                 </div>
                 <a href={PAGE_URLS.ABOUT_US} data-aos="fade-up" className="font-manrope font-bold  2xl:text-lg leading-138 text-dark-yellow text-xl manrope flex items-center gap-2.5 w-fit group  transition-all ease-linear duration-300 mb-10 max-lg:text-center max-lg:mx-auto">
                   Devamını Oku
-
                   <Icons className="group-hover:translate-x-1 transition-all ease-linear duration-300" icon="yelnext" />
                 </a>
                 <div className='grid grid-cols-2 '>
@@ -66,9 +61,7 @@ const Cozum = () => {
                     </div>
                   ))}
                 </div>
-
               </div>
-
               <div className="2xl:max-w-177.75 max-w-147.75 w-full mt-auto max-lg:mx-auto" >
                 <img
                   width={711}
@@ -77,7 +70,6 @@ const Cozum = () => {
                   alt="Modern Buildings"
                   className="w-full xl:h-257.5 max-lg:h-125  object-contain object-bottom max-lg:mx-auto"
                 />
-
               </div>
             </div>
           </div>
