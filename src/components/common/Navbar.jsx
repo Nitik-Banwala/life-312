@@ -18,7 +18,7 @@ const Navbar = () => {
     <div>
       <div className="max-w-[1612.1px] pt-7 w-full relative z-30 justify-between flex flex-row mx-auto px-4 lg:px-0">
         <div className="max-w-26">
-          <a href="Life-312">
+          <a href="/">
             <Icons icon={"logo"} />
           </a>
         </div>
