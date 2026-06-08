@@ -64,21 +64,21 @@ const Navbar = () => {
               {languageOpen && (
                 <div className="absolute top-full right-0 mt-2 min-w-[100px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
                   <button
-                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    className="w-full px-4 cursor-pointer py-2 text-left hover:bg-gray-100"
                     onClick={() => handleLanguageSelect("TR")}
                   >
                     TR
                   </button>
 
                   <button
-                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    className="w-full cursor-pointer px-4 py-2 text-left hover:bg-gray-100"
                     onClick={() => handleLanguageSelect("EN")}
                   >
                     EN
                   </button>
 
                   <button
-                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    className="w-full cursor-pointer px-4 py-2 text-left hover:bg-gray-100"
                     onClick={() => handleLanguageSelect("DE")}
                   >
                     DE

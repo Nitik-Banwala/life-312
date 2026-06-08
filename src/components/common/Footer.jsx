@@ -1,15 +1,21 @@
 
-import { FOOTER_LIST, SOCIAL_LINKS,PAGE_URLS } 
-from "../../../utils/helper";
+import { FOOTER_LIST, SOCIAL_LINKS, PAGE_URLS }
+    from "../../../utils/helper";
 import Icons from "./Icons";
 import { useState } from "react";
 
 const Footer = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+const [selectedLanguage, setSelectedLanguage] = useState("Türkçe");
 
-  const languages = ["Türkçe", "English", "Deutsch"];
+const languages = ["Türkçe", "English", "Deutsch"];
+
+const handleLanguageSelect = (lang) => {
+    setSelectedLanguage(lang);
+    setIsOpen(false);
+};
     const currentYear = new Date().getFullYear();
- 
+
     return (
         <footer className='px-5 manrope relative z-1 overflow-x-clip bg-dark'>
             <div className="2xl:max-w-331.25 xl:max-w-285 max-w-285 mx-auto pt-7 2xl:pt-8.75 pb-5 2xl:pb-6.5">
@@ -23,39 +29,39 @@ const Footer = () => {
                             </li>
                         ))}
                     </ul>
-                     <div className="relative">
-      <div className="flex flex-row items-center gap-2">
+                    <div className="relative">
+    <div className="flex flex-row items-center gap-2">
         <Icons icon="yelloearth" />
 
         <p className="text-white manrope text-base font-semibold leading-150">
-          Türkçe
+            {selectedLanguage}
         </p>
 
         <button onClick={() => setIsOpen(!isOpen)}>
-          <div
-            className={`transition-transform duration-300 ${
-              isOpen ? "rotate-180" : "rotate-0"
-            }`}
-          >
-            <Icons icon="down" />
-          </div>
-        </button>
-      </div>
-
-      {isOpen && (
-        <div className="absolute top-full mt-2 right-0 min-w-[120px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
-          {languages.map((lang, index) => (
-            <button
-              key={index}
-              className="w-full px-4 py-2 text-left text-black hover:bg-gray-100 transition-colors"
-              onClick={() => setIsOpen(false)}
+            <div
+                className={`transition-transform cursor-pointer duration-300 ${
+                    isOpen ? "rotate-180" : "rotate-0"
+                }`}
             >
-              {lang}
-            </button>
-          ))}
-        </div>
-      )}
+                <Icons icon="down" />
+            </div>
+        </button>
     </div>
+
+    {isOpen && (
+        <div className="absolute top-full mt-2 right-0 min-w-[120px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
+            {languages.map((lang, index) => (
+                <button
+                    key={index}
+                    className="w-full px-4 cursor-pointer py-2 text-left text-black hover:bg-gray-100 transition-colors"
+                    onClick={() => handleLanguageSelect(lang)}
+                >
+                    {lang}
+                </button>
+            ))}
+        </div>
+    )}
+</div>
                 </div>
 
                 <div className="flex items-start gap-y-10 gap-5 flex-wrap justify-between mt-10 sm:mt-20">
@@ -84,7 +90,7 @@ const Footer = () => {
                     ))}
                 </div>
                 <a aria-label="footer-logo" href="/" className="w-fit md:-mt-10 mt-10 h-27.5 ml-auto block">
-                   <Icons icon={'logo'}/> </a>
+                    <Icons icon={'logo'} /> </a>
                 <div className="border-t flex max-sm:flex-col gap-5 items-center justify-between border-gray/15 pt-6 mt-11.75">
                     <p className="text-white/65 font-medium text-sm leading-150 font-manrope md:text-base">
                         © {currentYear} Life 312. Tüm hakları saklıdır.
