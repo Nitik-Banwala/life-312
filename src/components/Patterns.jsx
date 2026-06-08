@@ -132,7 +132,7 @@ const Patterns = () => {
           Buy the Set on Amazon
         </Button>
       </div>
-      <div className=" absolute z-0 mt-60 translate-x-[70%] ">
+      <div className=" absolute z-0 sm:flex hidden mt-60 translate-x-[70%] ">
         <img src="/assets/images/svg/contact-ellipse.svg" alt="image" />
       </div>
       <div className="max-w-[1281.1px] z-20 mx-auto flex items-center justify-center flex-wrap gap-5">
