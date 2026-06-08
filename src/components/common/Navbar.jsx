@@ -6,6 +6,12 @@ import Button from "./Button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("TR");
+
+  const handleLanguageSelect = (lang) => {
+    setSelectedLanguage(lang);
+    setLanguageOpen(false);
+  };
 
 
   return (
@@ -16,7 +22,7 @@ const Navbar = () => {
             <Icons icon={"logo"} />
           </a>
         </div>
-        <button onClick={() => setIsOpen(!isOpen)}className="lg:hidden flex flex-col justify-center gap-1.5 z-100 relative w-6 h-6">
+        <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden flex flex-col justify-center gap-1.5 z-100 relative w-6 h-6">
           <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? "rotate-45" : "-translate-y-2"}`}></span>
           <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
           <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? "-rotate-45" : "translate-y-2"}`}></span>
@@ -43,8 +49,13 @@ const Navbar = () => {
               <div onClick={() => setLanguageOpen(!languageOpen)}>
                 <Button variant="primary">
                   <Icons icon="earth" />
-                  <p className="ml-2 mr-3 font-semibold text-base leading-none">TR</p>
-                  <div className={`transition-transform duration-300 ${languageOpen ? "rotate-180" : ""}`}>
+                  <p className="ml-2 mr-3 font-semibold text-base leading-none">
+                    {selectedLanguage}
+                  </p>
+                  <div
+                    className={`transition-transform duration-300 ${languageOpen ? "rotate-180" : ""
+                      }`}
+                  >
                     <Icons icon="down" />
                   </div>
                 </Button>
@@ -52,12 +63,30 @@ const Navbar = () => {
 
               {languageOpen && (
                 <div className="absolute top-full right-0 mt-2 min-w-[100px] rounded-lg bg-white shadow-lg overflow-hidden z-50">
-                  <button className="w-full px-4 py-2 text-left hover:bg-gray-100"onClick={() => setLanguageOpen(false)}>TR</button>
-                  <button className="w-full px-4 py-2 text-left hover:bg-gray-100"onClick={() => setLanguageOpen(false)}>EN</button>
-                  <button className="w-full px-4 py-2 text-left hover:bg-gray-100"onClick={() => setLanguageOpen(false)}>DE</button>
+                  <button
+                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    onClick={() => handleLanguageSelect("TR")}
+                  >
+                    TR
+                  </button>
+
+                  <button
+                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    onClick={() => handleLanguageSelect("EN")}
+                  >
+                    EN
+                  </button>
+
+                  <button
+                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                    onClick={() => handleLanguageSelect("DE")}
+                  >
+                    DE
+                  </button>
                 </div>
               )}
             </div>
+
             <Button variant="secondary">
               <Icons icon={"phone"} />
               <p className="font-bold leading-none text-base ml-2.5">
@@ -68,7 +97,7 @@ const Navbar = () => {
         </div>
 
         <div
-          onClick={() => setIsOpen(false)} className={`lg:hidden fixed inset-0 bg-black/40 transition-opacity duration-300 z-40 ${isOpen? "opacity-100 pointer-events-auto": "opacity-0 pointer-events-none"}`}/>
+          onClick={() => setIsOpen(false)} className={`lg:hidden fixed inset-0 bg-black/40 transition-opacity duration-300 z-40 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} />
         <div
           className={`lg:hidden fixed top-0 right-0 h-screen w-[320px] bg-dark z-50 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`} >
           <div className="pt-24 px-6">

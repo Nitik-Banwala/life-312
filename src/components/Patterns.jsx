@@ -106,7 +106,7 @@ const Patterns = () => {
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-5 pt-2 pb-5 font-bold leading-100 whitespace-nowrap text-base transition-colors relative ${activeTab === tab.id
+            className={`px-5 pt-2 pb-5 cursor-pointer font-bold leading-100 whitespace-nowrap text-base transition-colors relative ${activeTab === tab.id
               ? "text-light"
               : "text-gray-500 hover:text-gray-700"
               }`}
