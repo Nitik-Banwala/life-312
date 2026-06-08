@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Icons from "./Icons";
 import { NAV_LINKS } from "../../../utils/helper";
 import Button from "./Button";
@@ -7,6 +7,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("TR");
+  useEffect(() => {
+  if (isOpen) {
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+  }
+
+  return () => {
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+  };
+}, [isOpen]);
 
   const handleLanguageSelect = (lang) => {
     setSelectedLanguage(lang);
