@@ -5,7 +5,7 @@ const Services = () => {
 
 
   return (
-    <div className="pt-12 lg:pt-[95.1px] px-4 bg-linear-to-b from-thik/5 to-white">
+    <div className="sm:pt-12 pt-0 lg:pt-[95.1px] px-4 bg-linear-to-b from-thik/5 to-white">
       <div
        className="max-w-[1600.1px] hidden min-[1480px]:flex mx-auto mb-[-223.1px]"
       >
@@ -15,7 +15,7 @@ const Services = () => {
         <Icons icon={"text"} />
       </div>
 
-      <div className="text-center mb-8 mt-12 lg:mt-24 px-4">
+      <div className="text-center mb-8 sm:mt-12 mt-0 lg:mt-24 px-4">
         <h1 className="text-2xl sm:text-32 md:text-40 font-bold leading-140 text-ultra mb-1.5">
           Profesyonel Hizmet Çözümlerimiz
         </h1>
@@ -26,7 +26,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 max-w-[1600.1px] mx-auto px-4 lg:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 max-w-[1600.1px] mx-auto">
         {SERVICES.map((s, index) => {
   
 
@@ -48,8 +48,8 @@ const Services = () => {
               </h3>
 
               <p
-                className={`text-lg leading-150 manrope ${index === 6 ? "max-w-[240.1px]" : "max-w-[250.1px]"
-                  } group-hover:text-gray text-black duration-500`}
+                className={`text-lg leading-155 manrope ${index === 6 ? "max-w-[240.1px]" : "max-w-[250.1px]"
+                  } group-hover:text-gray text-ultre-black/85 duration-500`}
               >
                 {s.desc}
               </p>

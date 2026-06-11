@@ -7,7 +7,7 @@ const Cozum = () => {
 
   return (
     <div >
-      <div className="bg-white px-4 pt-25.5 rounded-t-3xl -mt-5 z-20 relative">
+      <div className="bg-white px-4 sm:pt-25.5 pt-10 rounded-t-3xl -mt-13.75  z-20 relative">
         <h2 className=" text-4xl sm:text-5xl md:text-64 text-dark text-center font-test-tiempos">Çözüm Ortaklarımız</h2>
       </div>
       <div className="overflow-hidden w-full mt-14">
@@ -25,7 +25,7 @@ const Cozum = () => {
           ))}
         </div>
       </div>
-      <div className='bg-primary-200/5'>
+      <div >
         <div className="bg-white rounded-b-3xl pt-14 md:pt-18 lg:pt-22 2xl:pt-27 relative z-1">
           <img className='absolute top-[47%] left-12.5 z-[-1] 2xl:block hidden' width="112" height="130" src="/assets/images/webp/market.webp" alt="crow-place" />
           <img className='absolute 2xl:right-26 right-0 z-[-1]' width="194" height="231" src="/assets/images/webp/elips.webp" alt="polygonRightEllipse" />
@@ -52,12 +52,12 @@ const Cozum = () => {
                   {STATS_LIST.map((item, index) => (
                     <div
                       key={index} className={` py-5 ${index % 2 === 0 ? "border-r border-dashed border-dark-yellow sm:pr-8.5 pr-3" : "sm:pl-8.5 pl-3"}  ${index < 2 ? "border-b border-dashed border-dark-yellow" : ""}`} >
-                      <h4 data-aos="fade-up" className=" manrope max-lg:text-center max-lg:mx-auto font-bold 2xl:text-xl sm:text-2xl md:text-32 sm:text-2xl text-xl tracking-[-0.96px] text-dark leading-125 max-w-61.25 relative">
+                      <h4 data-aos="fade-up" className=" manrope max-lg:text-center max-lg:mx-auto font-bold md:text-32 sm:text-2xl text-xl tracking-[-0.96px] text-dark leading-125 max-w-61.25 relative">
                         <span className="">{item.number}</span>
                         <span className="text-xl text-dark-yellow xl:absolute -top-1">+ </span>
-                        <span className='xl:ps-4'>{item.title}</span>
+                        <span className='xl:ps-4 text-dark'>{item.title}</span>
                       </h4>
-                      <p data-aos="fade-up" className="mt-3 manrope md:text-lg max-lg:text-center"> {item.subtitle}</p>
+                      <p data-aos="fade-up" className="mt-3 text-light-black/75 manrope md:text-lg max-lg:text-center"> {item.subtitle}</p>
                     </div>
                   ))}
                 </div>

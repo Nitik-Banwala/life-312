@@ -80,8 +80,8 @@ const handleLanguageSelect = (lang) => {
                                                 : "text-gray hover:text-white"
                                                 }`}
                                         >
-                                            {linkObj.icon && <Icons icon={linkObj.icon} />}
-                                            <a href="/" className="max-w-61.25 block">{linkObj.name}</a>
+                                           <a href="/"> {linkObj.icon && <Icons icon={linkObj.icon} />}</a>
+                                            <a href="/" className="max-w-61.25 block ">  {linkObj.name}</a>
                                         </a>
                                     </li>
                                 ))}

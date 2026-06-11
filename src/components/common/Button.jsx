@@ -13,10 +13,10 @@ const variants = {
         "bg-white text-black w-[208px] h-[53px] gap-3.5 rounded-[90px] group hover:text-white hover:bg-dark manrope font-bold manrope text-lg duration-500 ",
 
     warning:
-        "bg-black rounded-[90px] h-[49px] text-white gap-3 hover:bg-white duration-500 hover:text-black manrope border w-[223px] ",
+        "bg-black rounded-[90px] h-[49px] text-white gap-3 hover:bg-white duration-500 hover:text-black manrope border w-full sm:w-[223px] ",
 
     outline:
-        "text-white bg-dark hover:bg-white hover:text-dark border border-dark duration-500 w-[201px] h-[49px] manrope rounded-[90px]",
+        "text-white bg-dark hover:bg-white hover:text-dark border border-dark duration-500 w-full sm:w-[201px] h-[49px] manrope rounded-[90px]",
 
     ghost:
          "duration-500 w-[202px] h-[53px] hover:bg-none hover:bg-white/90 bg-gradient-to-r from-dark-blue to-light manrope hover:text-light border birder-light duration-500 text-white rounded-[90px]",

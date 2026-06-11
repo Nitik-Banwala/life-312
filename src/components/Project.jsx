@@ -2,7 +2,7 @@ import { SLIDER_IMAGES } from "../../utils/helper";
 import Button from "./common/Button";
 import Icons from "./common/Icons";
 
-const Projext = () => {
+const Project = () => {
   return (
     <div className="px-4">
       <div className="mt-16 lg:mt-[127.1px]">
@@ -15,19 +15,19 @@ const Projext = () => {
             {[...SLIDER_IMAGES, ...SLIDER_IMAGES].map((item, index) => (
               <div
                 key={index}
-                className="flex items-center flex-row shrink-0"
+                className="flex items-center justify-center flex-row shrink-0"
               >
                 <img
                   src={item}
                   alt="image"
                   className="h-10 md:h-12 lg:h-15.5"
                 />
-                <div className="bg-black/15 w-0.5 h-5 lg:h-7 mx-22 lg:mx-30" />
+                <div className="bg-black/15 w-px h-7 mt-2 mx-7 lg:mx-12" />
               </div>
             ))}
           </div>
         </div>
-
+        
         <div className="max-w-[1305.1px] w-full mx-auto mt-12 md:20  lg:mt-30 mb-12 lg:mb-16 px-4 lg:px-0">
           <div className="bg-[url('/assets/images/webp/bulbg.webp')] rounded-3xl bg-no-repeat bg-center bg-cover min-h-[345.1px] py-8 lg:py-9 px-6 lg:px-12.5 flex flex-col lg:flex-row justify-between gap-10">
 
@@ -58,4 +58,4 @@ const Projext = () => {
   );
 };
 
-export default Projext;
+export default Project;

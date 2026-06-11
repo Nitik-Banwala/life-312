@@ -8,19 +8,19 @@ const Navbar = () => {
   const [languageOpen, setLanguageOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("TR");
   useEffect(() => {
-  if (isOpen) {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-  } else {
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
-  }
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    }
 
-  return () => {
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
-  };
-}, [isOpen]);
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   const handleLanguageSelect = (lang) => {
     setSelectedLanguage(lang);
@@ -30,9 +30,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="max-w-[1612.1px] pt-7 w-full relative z-30 justify-between flex flex-row mx-auto px-4 lg:px-0">
-        <div className="max-w-26">
-          <a href="/">
+      <div className="max-w-[1612.1px] sm:pt-7 pt-4 w-full relative z-30 justify-between flex flex-row mx-auto px-4 lg:px-0">
+        <div className="sm:max-w-26 h-fit">
+          <a href="/" className=" sm:max-w-26 h-fit w-auto" >
             <Icons icon={"logo"} />
           </a>
         </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
               <div key={index}>
                 <a
                   href="#"
-                  className="text-white hover:text-white/50 hover:underline duration-500 text-base font-medium leading-none"
+                  className="text-white manrope hover:text-white/50 hover:underline duration-500 text-base font-medium leading-none"
                 >
                   {item}
                 </a>
@@ -101,11 +101,13 @@ const Navbar = () => {
               )}
             </div>
 
-            <Button variant="secondary">
-              <Icons icon={"phone"} />
-              <p className="font-bold leading-none text-base ml-2.5">
-                0 (312) 911 30 60
-              </p>
+            <Button variant="secondary" asChild>
+              <a href="tel:+903129113060" className="flex items-center">
+                <Icons icon={"phone"} />
+                <p className="font-bold leading-none text-base ml-2.5">
+                  0 (312) 911 30 60
+                </p>
+              </a>
             </Button>
           </div>
         </div>

@@ -3,33 +3,38 @@ import { useSearchParams } from "react-router-dom";
 import { ALL_PATTERNS, TABS } from "../../utils/helper";
 import Icons from "./common/Icons";
 import Button from "./common/Button";
-
 const INITIAL_VISIBLE = 8;
 
-const PatternCard = ({ pattern }) => (
-  <div className="rounded-lg overflow-hidden flex">
-    <div className="flex z-20 justify-center ">
-      <img
-        src={pattern.image}
-        alt={pattern.title}
-        className="w-full max-w-[305.1px] bg-white h-[419.1px]"
-      />
-    </div>
-  </div>
-);
+const PatternCard = ({ pattern }) => {
+  const [flipped, setFlipped] = useState(false);
 
+  return (
+    <div
+      className="rounded-lg overflow-hidden cursor-pointer flex"
+      onClick={() => setFlipped(!flipped)}
+    >
+      <div className="flex z-20 justify-center">
+        <img
+          src={pattern.image}
+          alt={pattern.title}
+          className="w-full max-w-[305.1px] bg-white h-[419.1px] transition-transform duration-700"
+          style={{
+            transform: flipped ? "rotateY(360deg)" : "rotateY(0deg)",
+          }}
+        />
+      </div>
+    </div>
+);
+}; 
 const Patterns = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [showAll, setShowAll] = useState(false);
-
   const tabFromUrl = searchParams.get("tab");
   const isValid = TABS.some((t) => t.id === tabFromUrl);
   const activeTab = isValid ? tabFromUrl : "TF";
-
   const patterns = ALL_PATTERNS[activeTab] || [];
   const visible = showAll ? patterns : patterns.slice(0, INITIAL_VISIBLE);
   const hasMore = patterns.length > INITIAL_VISIBLE;
-
   const handleTabChange = (id) => {
     setShowAll(false);
     setSearchParams(
@@ -40,7 +45,6 @@ const Patterns = () => {
       { replace: true }
     );
   };
-
   const handleDownload = () => {
     const tab = TABS.find((t) => t.id === activeTab);
     const data = ALL_PATTERNS[activeTab];
@@ -85,7 +89,6 @@ const Patterns = () => {
       </body>
       </html>
     `;
-
     const blob = new Blob([html], { type: "text/html" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -101,7 +104,6 @@ const Patterns = () => {
         <img src="/assets/images/svg/icon.svg" alt="image" />
       </div>
       <div className="flex justify-center h-12.5 gap-0  mb-8.5 overflow-x-auto">
-
         {TABS.map((tab) => (
           <button
             key={tab.id}
@@ -118,9 +120,7 @@ const Patterns = () => {
           </button>
         ))}
       </div>
-
-      <div className="flex justify-center gap-3 mb-15 ">
-
+      <div className="flex justify-center sm:flex-row flex-col gap-3 mb-15 ">
         <Button
           onClick={handleDownload}
           variant="warning">
@@ -140,7 +140,6 @@ const Patterns = () => {
           <PatternCard key={pattern.id} pattern={pattern} />
         ))}
       </div>
-
       {hasMore && (
         <div className="flex justify-center mt-15">
           <Button

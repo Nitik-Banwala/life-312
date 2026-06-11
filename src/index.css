@@ -18,9 +18,12 @@
   --color-thik: #305CDE;
   --color-gray: #9DA2B3;
   --color-dark-blue: #8E2EE0;
+  --color-light-black:#0F0F0F;
+  --color-ultre-black:#01010C;
 
 
   --leading-150: 150%;
+  --leading-155: 155%;
   --leading-140: 140%;
   --leading-120: 120%;
   --leading-125: 125%;

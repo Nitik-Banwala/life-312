@@ -2,7 +2,7 @@ import Footer from './components/common/Footer'
 import Cozum from './components/Cozum'
 import Hero from './components/Hero'
 import Patterns from './components/Patterns'
-import Projext from './components/Projext'
+import Project from './components/Project'
 import Seffaf from './components/Seffaf'
 import Services from './components/Services'
 import './index.css'
@@ -16,7 +16,7 @@ function App() {
       <Services/>
       <Seffaf/>
       <Patterns/>
-      <Projext/>
+      <Project/>
       <Footer/>
     </>
   )

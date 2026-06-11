@@ -21,8 +21,8 @@ const Seffaf = () => {
                                 <Icons icon={item.icon} />
                             </div>
                             <h3 className="mt-12 font-bold text-dark leading-116 text-2xl">{item.heaing}</h3>
-                            <p className={`${(index === 0 || index === 2) ? "max-w-[292.1px]" : " max-w-[252.1px]"} mt-3 leading-150 font-medium text-base text-center`} >{item.para}</p>
-                            <p className="font-medium text-base">{item.para2}</p>
+                            <p className={`${(index === 0 || index === 2) ? "max-w-[292.1px]" : " max-w-[252.1px]"} mt-3 leading-150 text-ultre-black/85 font-medium text-base text-center`} >{item.para}</p>
+                            <p className="font-medium text-ultre-black/85 text-base">{item.para2}</p>
                         </div>
                     )
                 })}
